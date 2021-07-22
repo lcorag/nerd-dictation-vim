@@ -5,9 +5,9 @@ function! s:NDInstall()
         execute "!pip3 install vosk"
         let clonedir = "https://github.com/ideasman42/nerd-dictation.git "
         "let plugindir = expand("<sfile>:h")
-        echom expand("<sfile>:h")
+        let g:here=expand("<sfile>:h")
         "execute "!git clone " . clonedir . plugindir
     endif
 endfunction
 
-command NDInstall call s:NDInstall()
+command! NDInstall call s:NDInstall()
