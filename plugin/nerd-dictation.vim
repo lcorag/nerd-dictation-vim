@@ -9,7 +9,8 @@ function! s:NDInstall()
         let installdir = s:plugindir . "/nerd-dictation"
         " try removing existing dir
         if isdirectory(installdir)
-            execute "!rm -rf installdir"
+            silent execute "!rm -rf " . installdir
+            execute "!echo 'cleaned git nerd-dictation; reinstallng'"
         endif
         execute "!git clone " . clonedir . installdir
     endif
