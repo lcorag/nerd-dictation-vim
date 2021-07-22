@@ -6,7 +6,7 @@ function! s:NDInstall()
     if ans[0] ==? "y"
         execute "!pip3 install vosk"
         let clonedir = "https://github.com/ideasman42/nerd-dictation.git "
-        execute "!git clone " . clonedir . s:plugindir
+        execute "!git clone " . clonedir . s:plugindir . "nerd-dictation"
     endif
 endfunction
 
