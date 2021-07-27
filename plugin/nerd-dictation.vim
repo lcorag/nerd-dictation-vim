@@ -82,7 +82,7 @@ command! NDModelList echom "Available models: [" . join(s:ModelList("","","")) .
 " Start nerd-dictation completing available languages
 command!  -complete=customlist,s:ModelList -nargs=? NDBegin call s:NDBegin(<f-args>)
 function! s:ModelList(A,L,P)
-    let cmd = "ls " . s:plugindir . "/models"
+    let cmd = "ls --ignore=README.md " . s:plugindir . "/models"
     return systemlist(cmd)
 endfunction
 
