@@ -1,0 +1,17 @@
+To install new modules, fill below and quit-save;
+To abort quit without saving.
+
+MODEL::
+NAME_AS::
+
+Additional modules can be found at:
+
+    https://alphacephei.com/vosk/models
+
+Inspect the site and fill the information below:
+
+"""""""
+" E.g.: to install english model (small), naming it EN in the plugin:
+" MODEL:: vosk-model-small-en-us-0.15
+" NAME_AS:: EN
+"""""""
